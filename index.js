@@ -29,14 +29,13 @@ app.use("/api/courses", coursesRouter); //api courses
 app.use("/api/users", usersRouter); //api users
 
 // global middleware for not found router
-/*
 app.all("*", (req, res, next) => {
   return res.status(404).json({
     status: httpStatusText.ERROR,
     message: "this resource is not available",
   });
 });
-*/
+
 
 // global error handler
 app.use((error, req, res, next) => {
